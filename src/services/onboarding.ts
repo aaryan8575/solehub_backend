@@ -27,7 +27,7 @@ class OnboardingService extends TransactionBaseService {
       where: { id: Not(IsNull()) },
     });
 
-    
+    return status;
   }
 
   async update(data: UpdateOnboardingStateInput): Promise<OnboardingState> {
